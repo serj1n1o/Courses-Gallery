@@ -1,4 +1,4 @@
-rootProject.name = "Groove&Move"
+rootProject.name = "GrooveAndMove"
 
 pluginManagement {
     repositories {

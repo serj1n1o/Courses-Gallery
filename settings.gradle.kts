@@ -1,4 +1,4 @@
-rootProject.name = "Courses-Gallery"
+rootProject.name = "Groove&Move"
 
 pluginManagement {
     repositories {

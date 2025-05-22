@@ -33,22 +33,37 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material3)
+            implementation(compose.material)
+            implementation(compose.materialIconsExtended)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+
             implementation(libs.kermit)
+
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.client.serialization)
             implementation(libs.ktor.client.logging)
+
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+
             implementation(libs.voyager.navigator)
+            implementation(libs.voyager.screenModel)
+            implementation(libs.voyager.bottomSheetNavigator)
+            implementation(libs.voyager.tabNavigator)
+            implementation(libs.voyager.koin)
+            implementation(libs.voyager.transitions)
+
             implementation(libs.kotlinx.serialization.json)
+
             implementation(libs.koin.core)
             implementation(libs.koin.compose)
+
             implementation(libs.coil)
             implementation(libs.coil.network.ktor)
+
             implementation(libs.kotlinx.datetime)
         }
 
@@ -91,7 +106,6 @@ android {
     }
 }
 
-//https://developer.android.com/develop/ui/compose/testing#setup
 dependencies {
     androidTestImplementation(libs.androidx.uitest.junit4)
     debugImplementation(libs.androidx.uitest.testManifest)
@@ -100,8 +114,6 @@ dependencies {
 sqldelight {
     databases {
         create("MyDatabase") {
-            // Database configuration here.
-            // https://cashapp.github.io/sqldelight
             packageName.set("com.courses.coursesapp.db")
         }
     }

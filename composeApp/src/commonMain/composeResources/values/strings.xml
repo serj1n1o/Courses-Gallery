@@ -4,4 +4,7 @@
     <string name="run">Run</string>
     <string name="stop">Stop</string>
     <string name="theme">Theme</string>
+    <string name="courses_list">Список курсов</string>
+    <string name="profile">Профиль</string>
+    <string name="settings">Настройки</string>
 </resources>
